@@ -1,0 +1,5 @@
+docker build -t amontanor/repository-utopia:docker-flask-utopia .
+
+docker push amontanor/repository-utopia:docker-flask-utopia
+
+docker run -it -p 5000:5000 -v c:/Antonio/flask:/app  amontanor/repository-utopia:docker-flask-utopia --always 
